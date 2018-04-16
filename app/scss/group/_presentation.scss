@@ -1,0 +1,68 @@
+.presentation {
+    width: 89%; 
+    padding: 30px 20px;
+    margin: 0 auto;
+    margin-left: 11% ;
+    background-image: url('../img/phone-about.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:$violet;
+    .h2 {
+        display: inline;
+        padding-bottom: 58px;
+        display: inline;
+        &:after {
+            width: 70px;
+            right: -10%;
+            margin: auto;
+            top:48%;
+        }
+    }
+    &--content {
+        width: 60%;
+    }
+    @media (max-width: $medium-max){
+        height: 700px;
+        margin-left: 5%;
+        background-position: center bottom;
+        background-size: 30%; 
+    }
+    @media (max-width: $medium-min){
+        height: 530px;
+        background: none;
+        &--content {
+            width: 100%;
+        }
+    }
+    @media (max-width: $mobile-max){
+        height: 570px;
+        background: none;
+        padding: 0; 
+        &--content {
+            width: 100%;
+            p{
+                &:first-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+	}
+}
+
+.presentation--wrapper {
+    display: flex;
+    padding: 50px 0;
+    display: flex;
+    p {
+        font-size: 1.25rem; 
+        padding: 10px 0;
+        @media (max-width: $mobile-max){
+            &.first-p {
+                padding-top: 30px;
+            }
+        }
+    }
+    
+}
+

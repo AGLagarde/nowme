@@ -1,0 +1,15 @@
+.video-box--section {
+    height: 650px; 
+    padding: 30px 0;
+    background: $background;
+}
+.video-box {
+    height: 100%; 
+    width: 350px;
+    margin: 0 auto; 
+    text-align: center;
+    background-image: url('../img/iphone.png');
+    @media (max-width: $medium-max){
+        width: 310px;
+    }
+}

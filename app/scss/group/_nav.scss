@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 0;
+  width: 90px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  @media (max-width: $medium-max) {
+    display: none;
+  }
+  .nav--wrap {
+    font-size: 40px;
+  }
+  .nav--wrap-item {
+    display: block;
+    width: 100%;
+    padding: 20px 5px;
+    text-align: right;
+    color: white;
+    transition: 0.5s;
+    font-family: $font;
+    &:after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      border-radius: 100%;
+      background-color: $violet;
+      display: inline-block;
+    }
+  }
+}
